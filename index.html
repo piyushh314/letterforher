@@ -10,45 +10,51 @@
 <div class="valentines-day-card">
   <input id="open" type="checkbox">
   <label class="open" for="open"></label>
+
   <div class="card-front">
-    <div class="note">Apne haato se kholiye ji</div>
+    <div class="note">CLICK HERE BBG</div>
   </div>
 
   <div class="card-inside">
-    <div class="text-one">Sorry ji humko maaf krdo<br>hum pgle h thode ❤️<br>Love you bbg</div>
+    <div class="text-one">Sorry ji humko maaf krdo😔<br>मैं हु भी थोड़ा पहला😔<br>LOVE YOU btw💗💗</div>
     <div class="heart"></div>
     <div class="smile"></div>
     <div class="eyes"></div>
 
-    <!-- 🌟 Button to open letter -->
-    <button class="open-letter-btn" onclick="openLetter()">Open My Sorry Letter 💌</button>
-  </div>
+    <!-- ✅ Button to open letter -->
+   <!-- <button class="read-letter-btn" onclick="openLetter()">Open My Sorry Letter 💌</button>
+    
+   -->
+   
 </div>
+</div>
+<a href="letter.html" class="read-letter-btn">Sorry Letter 💌</a>
 
-<!-- 🌟 Hidden Popup Letter -->
+<!-- ✅ Letter popup outside card -->
 <div id="letterPopup" class="letter-popup">
   <div class="letter-content">
-    <span class="close" onclick="closeLetter()">&times;</span>
-    <h2>My Sorry Letter ❤️</h2>
+    <span class="close-letter" onclick="closeLetter()">&times;</span>
+    <h2>solly letter</h2>
     <p>
-      Sorry ji, mujhe pata hai kabhi kabhi main bahut pagalpan kar leta hu,<br>
-      par mera dil hamesha tumhare liye hi dhadakta hai. 💖<br><br>
-      Tum meri duniya ho, aur tumhari ek muskaan meri zindagi roshan kar deti hai.<br>
-      Please maaf kar do mujhe, humesha aapka hi rahunga. ❤️<br><br>
-      Love you bbg! 💕
+      Solly ji, i socha ni tha ki hurt krdunga<br>
+      pr pliz maaf krdo😔<br><br>
+      chahe toh meri pitai krdena<br>
+      but dont get gussa😔<br><br>
+      solly <br><br>
+      Love you bbg! 💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💕
     </p>
   </div>
 </div>
 
-<!-- 🌟 Script -->
 <script>
-  function openLetter() {
-    document.getElementById("letterPopup").style.display = "block";
-  }
-  function closeLetter() {
-    document.getElementById("letterPopup").style.display = "none";
-  }
+function openLetter() {
+  document.getElementById("letterPopup").classList.add("show");
+}
+function closeLetter() {
+  document.getElementById("letterPopup").classList.remove("show");
+}
 </script>
 
 </body>
 </html>
+
