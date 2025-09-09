@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Love Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="valentines-day-card">
+  <input id="open" type="checkbox">
+  <label class="open" for="open"></label>
+  <div class="card-front">
+    <div class="note">Apne haato se kholiye ji</div>
+  </div>
+
+  <div class="card-inside">
+    <div class="text-one">Sorry ji humko maaf krdo<br>hum pgle h thode ❤️<br>Love you bbg</div>
+    <div class="heart"></div>
+    <div class="smile"></div>
+    <div class="eyes"></div>
+
+    <!-- 🌟 Button to open letter -->
+    <button class="open-letter-btn" onclick="openLetter()">Open My Sorry Letter 💌</button>
+  </div>
+</div>
+
+<!-- 🌟 Hidden Popup Letter -->
+<div id="letterPopup" class="letter-popup">
+  <div class="letter-content">
+    <span class="close" onclick="closeLetter()">&times;</span>
+    <h2>My Sorry Letter ❤️</h2>
+    <p>
+      Sorry ji, mujhe pata hai kabhi kabhi main bahut pagalpan kar leta hu,<br>
+      par mera dil hamesha tumhare liye hi dhadakta hai. 💖<br><br>
+      Tum meri duniya ho, aur tumhari ek muskaan meri zindagi roshan kar deti hai.<br>
+      Please maaf kar do mujhe, humesha aapka hi rahunga. ❤️<br><br>
+      Love you bbg! 💕
+    </p>
+  </div>
+</div>
+
+<!-- 🌟 Script -->
+<script>
+  function openLetter() {
+    document.getElementById("letterPopup").style.display = "block";
+  }
+  function closeLetter() {
+    document.getElementById("letterPopup").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
